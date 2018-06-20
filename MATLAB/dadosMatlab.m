@@ -1,6 +1,6 @@
-sensor3data = csvread('V_SENSOR_3_v3.csv',1);
-sensor5data = csvread('V_SENSOR_5_v3.csv',1);
-sensor7data = csvread('V_SENSOR_7_v3.csv',1);
+sensor3data = csvread('sensor3.csv',1);
+sensor5data = csvread('sensor5.csv',1);
+sensor7data = csvread('sensor7.csv',1);
 
 dataVect = [{sensor3data} {sensor5data} {sensor7data}];
 
@@ -15,7 +15,7 @@ global timeVect;
 
 sensor3label = {'tempAc','umidAc','lumiAc'};
 sensor5label = {'tempInt','umidInt','CO2Int'};
-sensor7label = {'tempExt','umidExt','radiExt','dirVentExt','velVentExt','pcptExt','ptOrvExt'};
+sensor7label = {'tempExt','umidExt','radiExt','pcptExt'};
 
 sensorsLabel = [{sensor3label} {sensor5label} {sensor7label}];
 
